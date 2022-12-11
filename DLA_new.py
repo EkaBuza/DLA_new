@@ -1,9 +1,10 @@
 import random
 import pygame
 import sys
+import pandas
 
-x = 150
-y = 150
+x = 400
+y = 400
 r = 5
 field = [[0 for i in range(x)] for j in range(y)]
 
@@ -119,7 +120,6 @@ class Visualisation:
         while self.control.count_of_cells < x * y * share / 100:
             #clock.tick(FPS)
             self.control.moving()
-            # вывод при достижении определенного процента пористост
             for i in range(y):
                 for j in range(x):
                     if field[i][j] == 0:
