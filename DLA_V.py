@@ -43,10 +43,10 @@ def main():
     share = int(input('Введите процент клеток: '))
     dis = Visualisation()
     dis.processing(share)
-    df = pandas.DataFrame(field)
-    writer = pandas.ExcelWriter('output.xlsx')  # write dataframe to excel
-    df.to_excel(writer)
-    writer.save()
+    #df = pandas.DataFrame(field)
+    #writer = pandas.ExcelWriter('output.xlsx')  # write dataframe to excel
+    #df.to_excel(writer)
+    #writer.save()
 
 
 main()
